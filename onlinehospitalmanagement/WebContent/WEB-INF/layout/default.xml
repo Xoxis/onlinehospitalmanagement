@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="hospital.base" template="/WEB-INF/template/default.jsp">
+		<put-attribute name="title" value="home"></put-attribute>
+
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="sidebar" value ="/WEB-INF/tiles/sidebar.jsp"></put-attribute>
+
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+
+	</definition>
+	<definition name="login" extends="hospital.base">
+		<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+	</definition>
+
+	<definition name="home" extends="hospital.base">
+		<put-attribute name="title" value="home"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="newaccount" extends="hospital.base">
+		<put-attribute name="title" value="newaccount"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/newaccount.jsp"></put-attribute>
+	</definition>
+	<definition name="accountcreated" extends="hospital.base">
+		<put-attribute name="title" value="accountcreated"></put-attribute>
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	<definition name="loggedout" extends="hospital.base">
+		<put-attribute name="title" value="loggedout"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp"></put-attribute>
+		
+		
+	</definition>
+
+</tiles-definitions>
